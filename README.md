@@ -39,7 +39,6 @@ If duplicate filenames are found, the user can choose to **overwrite**, **rename
    - `1` → Overwrite the existing file.  
    - `2` → Rename the new file automatically.  
    - `3` → Ignore the file.  
-   - **any other key** to abort
 
 ---
 
@@ -80,11 +79,11 @@ Downloads/
 
 ---
 
-## Limitations / Future improvements  
+## Limitations / Future Improvements
 
-- Only processes files in the selected root directory (subfolders are ignored).  
-- No non-interactive mode (always prompts for duplicates).  
-- Does not handle special files (symlinks, hidden files, etc.).  
+- Only processes files in the selected root directory (ignores subfolders).  
+- Always requires user input to handle duplicate files (no automatic mode).  
+- Does not handle special files like symbolic links or hidden files.  
 
 ---
 
